@@ -1,0 +1,106 @@
+:root{
+  --corPrincipal: #141414;
+  --corSecundaria: #E50914;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body{
+  background: var(--corPrincipal);
+  font-family: 'Times New Roman', Times, serif;
+  font-style: var(--corSecundaria);
+  color: white;
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 16px;
+  color: var(--corSecundaria);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav {
+  margin-right: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover{
+  color: #FFF;
+  transition: 0.76s ease all;
+}
+
+/*Filme Principal*/
+.principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-setePecados.jpg');
+  
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.principal .descricao {
+  margin-bottom: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.titulo {
+  margin-top: 2%;
+  font-size: 300%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+  margin-left: 30px;
+}
+
+
+.botao {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: white;
+  border-radius: 15px;
+  padding: 15px 25px 15px 20px;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.botao:hover{
+  background-color: #AAA;
+  transition: .5s ease all;
+  color: black;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+.principal .container {
+  width: 70%;
+}
+
+.carrosel {
+  margin-top: 10px;
+}
